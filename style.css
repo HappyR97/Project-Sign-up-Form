@@ -14,49 +14,144 @@ body {
   font-family: "Roboto", sans-serif;
   line-height: 1;
   font-weight: 400;
-  color: #555;
-}
 
-.img-container {
-  width: 35vw;
-  height: 100vh;
   background-image: url(/form_img.webp);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: -160px 160px;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+input,
+textarea,
+select,
+button {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.img-container {
+  width: 30vw;
+  height: 100vh;
   position: relative;
 }
 
-.img-container img {
-  transform: scale(0.9);
-}
-
 .form-container {
-  width: 75vw;
+  width: 70vw;
   height: 100vh;
+  background-color: #d2dde4;
 }
 
 .logo-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 2rem;
   position: absolute;
-  width: 100%;
+  padding: 2rem;
+  width: 30vw;
   height: 15rem;
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .logo-container img {
-  width: 25rem;
+  width: 45%;
   height: auto;
 }
 
-.logo-container span {
-  font-size: 4rem;
+.logo-container div {
+  width: 50%;
+  font-size: 3rem;
   font-family: "Black Ops One", cursive;
   font-weight: 400;
   color: #20567a;
+}
+.top-container {
+  font-size: 2rem;
+  margin-top: 16rem;
+  margin-left: 3.2rem;
+  width: 100rem;
+  color: rgb(36, 36, 36);
+}
+
+.top-container p {
+  margin-bottom: 3.2rem;
+}
+
+.top-container p:last-child {
+  margin-bottom: 6.4rem;
+}
+
+.top-container p strong {
+  display: block;
+  margin-bottom: 1.2rem;
+}
+
+.mid-container {
+  padding: 3.2rem;
+  background-color: #e9eef2;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.mid-container p {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 2.4rem;
+}
+
+.mid-container form {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 4.8rem;
+  row-gap: 1.6rem;
+  box-shadow: ;
+}
+
+.mid-container div {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.bottom-container {
+  margin-top: 3.2rem;
+  margin-left: 3.2rem;
+}
+
+button {
+  border: none;
+  border-radius: 3px;
+  background-color: #20567a;
+  padding: 1rem 2rem;
+  margin-bottom: 3.2rem;
+  font-size: 1.8rem;
+  color: #e9eef2;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
+}
+
+.bottom-container p {
+  font-size: 1.6rem;
+  color: rgb(36, 36, 36);
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #20567a;
+  font-weight: 500;
+}
+
+a:hover,
+a:active {
+  opacity: 0.8;
 }
