@@ -17,7 +17,7 @@ body {
 
   background-image: url(/form_img.webp);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 button,
@@ -37,14 +37,14 @@ button {
 }
 
 .img-container {
-  width: 30vw;
-  height: 100vh;
+  width: 60rem;
+  height: 90rem;
   position: relative;
 }
 
 .form-container {
-  width: 70vw;
-  height: 100vh;
+  width: 140rem;
+  height: 96.9rem;
   background-color: #d2dde4;
 }
 
@@ -55,12 +55,12 @@ button {
   gap: 2rem;
   position: absolute;
   padding: 2rem;
-  width: 30vw;
-  height: 15rem;
+  width: 100%;
+  height: 20rem;
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .logo-container img {
@@ -75,6 +75,29 @@ button {
   font-weight: 400;
   color: #20567a;
 }
+
+.credit {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translate(50%);
+  font-size: 1.6rem;
+  color: black;
+  padding: 5px;
+  font-weight: 600;
+  background-color: white;
+}
+
+.credit a:link,
+.credit a:visited {
+  color: #20567a;
+}
+
+.credit a:hover,
+.credit a:active {
+  color: #4d7895;
+}
+
 .top-container {
   font-size: 2rem;
   margin-top: 16rem;
@@ -113,7 +136,6 @@ button {
   grid-template-columns: auto 1fr;
   column-gap: 4.8rem;
   row-gap: 1.6rem;
-  box-shadow: ;
 }
 
 .mid-container div {
@@ -139,6 +161,12 @@ button {
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
 }
 
+button:hover,
+button:active {
+  background-color: #366787;
+  cursor: pointer;
+}
+
 .bottom-container p {
   font-size: 1.6rem;
   color: rgb(36, 36, 36);
@@ -153,5 +181,33 @@ a:visited {
 
 a:hover,
 a:active {
-  opacity: 0.8;
+  color: #4d7895;
+}
+
+input {
+  height: 3rem;
+  background-color: #e9eef2;
+  border: 1.5px solid #bcccd7;
+  border-radius: 3px;
+  padding-left: 5px;
+}
+
+input:invalid {
+  border: 1.5px solid red;
+}
+
+/* input:valid {
+  border: 1.5px solid #20567a;
+} */
+
+input:focus {
+  border: 1.5px solid #20567a;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+label {
+  color: rgb(71, 71, 71);
+  font-weight: 500;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
 }
